@@ -9,19 +9,18 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #404040;
   color: white;
   font-family: 'Roboto';
 }
 
 nav {
-  background-color: #ffffff;
+  background-color: #FFC100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
-  min-height: 7vh;
-  border-bottom: 2px solid #748EA0;
+  min-height: 8vh;
 }
 
 .logo {
@@ -40,7 +39,7 @@ nav {
   font-size: 1.8em;
   color: white;
   border: none;
-  background-color: #748EA0;
+  background-color: #ff9d00;
   padding: 0.4em;
   border-radius: 20px;
   transition: all 0.5 ease;
@@ -48,11 +47,11 @@ nav {
 }
 
 .login:hover {
-  background-color: #2F4858;
+  background-color: #ee8c00;
 }
 
 main {
-  height: 50vh;
+  height: 92vh;
   width: 100vw;
   background-color: #696969;
   max-width: 100%;
@@ -65,12 +64,11 @@ main {
 .categories {
   min-height: 100vh;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: #420420;
   max-width: 100%;
-  padding: 50px 20% 0 20%;
+  padding: 50px 10% 0 10%;
   font-size: 20px;
   padding-bottom: 100px;
-  border-top: 2px solid #748EA0;
 }
 
 main {
@@ -79,7 +77,7 @@ main {
   justify-content: center;
 }
 
-input {
+main input {
   padding: 20px;
   font-size: 20px;
   border: none;
@@ -89,9 +87,9 @@ input {
   margin-right: -3px;
 }
 
-.search-container button {
+main .search-container button {
   padding: 20px;
-  background: #748EA0;
+  background: #ff9d00;
   font-size: 20px;
   border: none;
   cursor: pointer;
@@ -100,27 +98,15 @@ input {
   border-radius: 0 50px 50px 0;
 }
 
-.search-container button:hover {
-  background: #2F4858;
-}
-
-.search {
-  height: 20vh;
-  width: 100vw;
-  background-color: #696969;
-  max-width: 100%;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+main .search-container button:hover {
+  background: #ee8c00;
 }
 
 /*--------------------*/
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(21%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   grid-gap: 50px;
 }
 
@@ -128,38 +114,8 @@ input {
   position: relative;
   border: 2px solid white;
   box-sizing: border-box;
-  background-color: #2F4858;
-
-}
-
-.container > div:hover {
-  animation: scale .2s linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes scaledown {
-  0% {
-    -webkit-transform: scale (1.06);
-    transform: scale(1.06);
-  }
-
-  100% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-  }
-}
-
-@keyframes scale {
-  0% {
-    -webkit-transform: scale (1);
-    transform: scale(1);
-  }
-
-  100% {
-    -webkit-transform: scale(1.06);
-    transform: scale(1.06);
-    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.5);
-  }
+  border-radius: 30px;
+  background-color: #333333
 }
 
 .container > div::before {
@@ -189,32 +145,4 @@ input {
 .test {
   font-size: 20px;
   padding: 40px;
-  background-color: #2F4858;
-}
-
-.results {
-  position: absolute;
-  background-color: #000000;
-  min-height: 30vh;
-  width: 45vw;
-  margin: 100px 15% 100px 25%;
-}
-
-.result {
-  background-color: #0f0f0f;
-  min-height: 30vh;
-  border-bottom: 1px solid white;
-}
-
-.logo1 {
-  min-height: 30vh;
-  border: 2px solid blue;
-}
-
-.side-menu {
-  margin: 40vh 0 0 2vw;
-  float: left;
-  position: relative;
-  font-size: 40px;
-  color: black;
 }
