@@ -10,7 +10,6 @@ html {
 
 body {
   background-color: #ffffff;
-  color: white;
   font-family: 'Roboto';
 }
 
@@ -51,7 +50,7 @@ nav {
   background-color: #2F4858;
 }
 
-main {
+.search-background {
   height: 50vh;
   width: 100vw;
   background-color: #696969;
@@ -60,6 +59,9 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .categories {
@@ -71,12 +73,7 @@ main {
   font-size: 20px;
   padding-bottom: 100px;
   border-top: 2px solid #748EA0;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: white;
 }
 
 input {
@@ -98,7 +95,7 @@ input {
   min-width: 7vw;
   min-height: 7vh;
   border-radius: 0 50px 50px 0;
-  transition: all .2s ease-in-out;
+  transition: background .2s ease-in-out;
 
 }
 
@@ -163,35 +160,73 @@ input {
   max-width: 70%;
 }
 
-.test {
+.footer {
   font-size: 20px;
   padding: 40px;
   background-color: #2F4858;
+  color: white;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
-.results {
-  position: absolute;
-  background-color: #000000;
-  min-height: 30vh;
-  width: 45vw;
-  margin: 100px 15% 100px 25%;
+.results-container {
+  display: flex;
 }
 
-.result {
-  background-color: #0f0f0f;
-  min-height: 30vh;
-  border-bottom: 1px solid white;
-}
-
-.logo1 {
-  min-height: 30vh;
-  border: 2px solid blue;
+.number {
+  background-color: fff;
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  padding: 30px;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .side-menu {
-  margin: 40vh 0 0 2vw;
-  float: left;
-  position: relative;
-  font-size: 40px;
-  color: black;
+  font-size: 30px;
+  line-height: 1.5;
+  background: rgb(144, 170, 188);
+  min-width: 200px;
+  padding: 40px;
+}
+
+.side-menu li {
+  list-style-type: none;
+}
+
+.results {
+  background-color: #d1d1d1;
+  min-height: 30vh;
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+
+.result {
+  font-size: 30px;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #818181;
+  display: flex;
+}
+
+.logo1 {
+  min-width: 100px;
+  max-width: 40%;
+  border: 2px solid #696969;
+  margin-right: 30px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-around
+}
+
+.login-tile {
+  height: 500px;
+  border: 1px solid #000;
+  min-width: 30%;
 }
