@@ -257,7 +257,7 @@ nav {
 .login-tile button {
   margin: 20px 0 20px 0;
   width: 100%;
-  font-size: 16px;
+  font-size: 24px;
   padding: 5px;
   background-color: #748EA0;
   color: #fff;
@@ -267,4 +267,13 @@ nav {
 
 .login-tile button:hover {
   background-color: #2F4858;
+}
+
+.login-tile p {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+hr {
+  margin: 10px 0 10px 0;
 }
