@@ -18,13 +18,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  padding: 10px 20px;
   min-height: 7vh;
   border-bottom: 2px solid #748EA0;
 }
 
 .logo {
-  font-size: 3.2em;
+  font-size: 32px;
   font-weight: bold;
   display: flex;
   align-items: center
@@ -36,11 +36,11 @@ nav {
 }
 
 .login {
-  font-size: 1.8em;
-  color: white;
+  font-size: 18px;
+  color: #fff;
   border: none;
   background-color: #748EA0;
-  padding: 0.4em;
+  padding: 4px;
   border-radius: 20px;
   min-width: 25vh;
   transition: all .2s ease-in-out;
@@ -76,7 +76,7 @@ nav {
   color: white;
 }
 
-input {
+.search-container input {
   padding: 20px;
   font-size: 20px;
   border: none;
@@ -96,7 +96,6 @@ input {
   min-height: 7vh;
   border-radius: 0 50px 50px 0;
   transition: background .2s ease-in-out;
-
 }
 
 .search-container button:hover {
@@ -226,7 +225,46 @@ input {
 }
 
 .login-tile {
+  font-size: 16px;
   height: 500px;
   border: 1px solid #000;
-  min-width: 30%;
+  min-width: 45%;
+  margin: 20px 20px 20px 20px;
+  padding: 30px;
+}
+
+.login-header {
+  font-size: 32px;
+  color: #2F4858;
+  font-weight: 700;
+}
+
+.login-tile input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.login-tile input:focus {
+  outline-color: #2F4858;
+}
+
+.login-tile label {
+  margin: 20px 0 5px 0;
+  display: inline-block;
+}
+
+.login-tile button {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  background-color: #748EA0;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+
+.login-tile button:hover {
+  background-color: #2F4858;
 }
