@@ -13,6 +13,10 @@ body {
   font-family: 'Roboto';
 }
 
+a:visited {
+  color: white;
+}
+
 nav {
   background-color: #ffffff;
   display: flex;
@@ -226,7 +230,7 @@ nav {
 
 .login-tile {
   font-size: 16px;
-  height: 500px;
+  min-height: 500px;
   border: 1px solid #000;
   min-width: 45%;
   margin: 20px 20px 20px 20px;
@@ -276,4 +280,9 @@ nav {
 
 hr {
   margin: 10px 0 10px 0;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  /*  vertical-align: middle;*/
 }

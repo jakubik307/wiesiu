@@ -25,29 +25,30 @@
   </header>
   <section class="login-container">
     <div class="login-tile">
-      <span class="login-header">Logowanie</span>
+      <span class="login-header">Zarejestruj się jako klient</span>
       <form action="">
         <label for="mail"><b>Adres e-mail</b></label>
-        <input type="text" name="mail" required>
+        <input type="email" name="mail" required>
+
+        <label for="name"><b>Imię</b></label>
+        <input type="text" name="name" required>
+
+        <label for="surname"><b>Nazwisko</b></label>
+        <input type="text" name="surname" required>
 
         <label for="password"><b>Hasło</b></label>
         <input type="password" name="password" required>
 
-        <button type="submit">Zaloguj się</button>
+        <label for="password-confirm"><b>Powtórz hasło</b></label>
+        <input type="password" name="password-confirm" required>
+
+        <label>
+          <input type="checkbox" name="regulamin"> Oświadczam, że zapoznałem się z regulaminem i go akceptuję.
+        </label>
+
+        <button type="submit">Załóż konto</button>
+
       </form>
-      Zapomiałeś hasła?
-    </div>
-    <div class="login-tile">
-      <span class="login-header">Rejestracja</span>
-      <p>Szukasz fachowca? Uzyskaj dostęp do special features z kontem! (Moja kreatywność robi daba)</p>
-      <a href="register-client.html">
-        <button>Jestem klientem</button>
-      </a>
-      <hr>
-      <p>Jesteś fachowcem i chcesz znaleźć klientów innych niż hot18 z zatkanym zlewem? Zarejestruj się już teraz. Johny Sins poleca!</p>
-      <a href="register-professional.html">
-        <button>Jestem fachowcem</button>
-      </a>
     </div>
   </section>
   <section class="footer">
