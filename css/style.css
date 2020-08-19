@@ -13,6 +13,10 @@ body {
   font-family: 'Roboto';
 }
 
+a {
+  color: white;
+}
+
 a:visited {
   color: white;
 }
